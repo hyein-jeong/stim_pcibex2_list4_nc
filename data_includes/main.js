@@ -149,7 +149,7 @@ CheckPreloaded("test_ncb", 10000)
 //start the recorder and send result files to the server
 Template(GetTable("intro_recorder.csv"),
     ir =>
-    InitiateRecorder("https://uni-potsdam.de/phraseproduction/exp2_day2/upload-recording.php", ir.line1)
+    InitiateRecorder("https://uni-potsdam.de/phraseproduction/exp2_day2_set4/upload-recording.php", ir.line1)
         .label("initiate_recorder")
 )
 
@@ -1474,10 +1474,10 @@ newTrial("cogtask_sample_fb",
       ,
       newImage("good", "good.png")
       ,
-      newText("left label", "Bad")
+      newText("left label", "schwierig")
         .before( getImage("bad") )
       ,
-      newText("right label", "Good")
+      newText("right label", "einfach")
         .after( getImage("good") )
       ,
       newScale("judgment", 5)
