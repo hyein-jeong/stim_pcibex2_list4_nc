@@ -727,7 +727,7 @@ Template(GetTable("prac_ncblock.csv"),
 
 ///////////////////// templates for trials during train and test session 
 
-Template(GetTable("list1_train1_cblock.csv"),
+Template(GetTable("list4_train1_cblock.csv"),
     train1_cb =>
     newTrial("train1_cb",
     
@@ -777,7 +777,7 @@ Template(GetTable("list1_train1_cblock.csv"),
     .log( "condition_phrFreq", train1_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train1_ncblock.csv"),
+Template(GetTable("list4_train1_ncblock.csv"),
     train1_ncb =>
     newTrial("train1_ncb",
     
@@ -828,7 +828,7 @@ Template(GetTable("list1_train1_ncblock.csv"),
 );
 
 
-Template(GetTable("list1_train2_cblock.csv"),
+Template(GetTable("list4_train2_cblock.csv"),
     train2_cb =>
     newTrial("train2_cb",
     
@@ -878,7 +878,7 @@ Template(GetTable("list1_train2_cblock.csv"),
     .log( "condition_phrFreq", train2_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train2_ncblock.csv"),
+Template(GetTable("list4_train2_ncblock.csv"),
     train2_ncb =>
     newTrial("train2_ncb",
     
@@ -928,7 +928,7 @@ Template(GetTable("list1_train2_ncblock.csv"),
     .log( "condition_phrFreq", train2_ncb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train3_cblock.csv"),
+Template(GetTable("list4_train3_cblock.csv"),
     train3_cb =>
     newTrial("train3_cb",
     
@@ -978,7 +978,7 @@ Template(GetTable("list1_train3_cblock.csv"),
     .log( "condition_phrFreq", train3_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train3_ncblock.csv"),
+Template(GetTable("list4_train3_ncblock.csv"),
     train3_ncb =>
     newTrial("train3_ncb",
     
@@ -1028,7 +1028,7 @@ Template(GetTable("list1_train3_ncblock.csv"),
     .log( "condition_phrFreq", train3_ncb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train4_cblock.csv"),
+Template(GetTable("list4_train4_cblock.csv"),
     train4_cb =>
     newTrial("train4_cb",
     
@@ -1078,7 +1078,7 @@ Template(GetTable("list1_train4_cblock.csv"),
     .log( "condition_phrFreq", train4_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train4_ncblock.csv"),
+Template(GetTable("list4_train4_ncblock.csv"),
     train4_ncb =>
     newTrial("train4_ncb",
     
@@ -1128,7 +1128,7 @@ Template(GetTable("list1_train4_ncblock.csv"),
     .log( "condition_phrFreq", train4_ncb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train5_cblock.csv"),
+Template(GetTable("list4_train5_cblock.csv"),
     train5_cb =>
     newTrial("train5_cb",
     
@@ -1178,7 +1178,7 @@ Template(GetTable("list1_train5_cblock.csv"),
     .log( "condition_phrFreq", train5_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train5_ncblock.csv"),
+Template(GetTable("list4_train5_ncblock.csv"),
     train5_ncb =>
     newTrial("train5_ncb",
     
@@ -1228,7 +1228,7 @@ Template(GetTable("list1_train5_ncblock.csv"),
     .log( "condition_phrFreq", train5_ncb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train6_cblock.csv"),
+Template(GetTable("list4_train6_cblock.csv"),
     train6_cb =>
     newTrial("train6_cb",
     
@@ -1278,7 +1278,7 @@ Template(GetTable("list1_train6_cblock.csv"),
     .log( "condition_phrFreq", train6_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_train6_ncblock.csv"),
+Template(GetTable("list4_train6_ncblock.csv"),
     train6_ncb =>
     newTrial("train6_ncb",
     
@@ -1331,7 +1331,7 @@ Template(GetTable("list1_train6_ncblock.csv"),
 
 
 
-Template(GetTable("list1_test_cblock.csv"),
+Template(GetTable("list4_test_cblock.csv"),
     test_cb =>
     newTrial("test_cb",
     
@@ -1375,13 +1375,14 @@ Template(GetTable("list1_test_cblock.csv"),
 	.log()  
     )
     .log( "sub_id"     , getVar("ID")    )
+    .log( "listNr" , test_cb.list)
     .log( "phrase_item", test_cb.phrase_item )
     .log( "phrase_test", test_cb.phrase_test )
     .log( "condition_exposure", test_cb.condition_exposure)
     .log( "condition_phrFreq", test_cb.condition_phrFreq)
 );
 
-Template(GetTable("list1_test_ncblock.csv"),
+Template(GetTable("list4_test_ncblock.csv"),
     test_ncb =>
     newTrial("test_ncb",
     
@@ -1425,6 +1426,7 @@ Template(GetTable("list1_test_ncblock.csv"),
 	.log()  
     )
     .log( "sub_id"     , getVar("ID")    )
+    .log( "listNr" , test_ncb.list)
     .log( "phrase_item", test_ncb.phrase_item )
     .log( "phrase_test", test_ncb.phrase_test )
     .log( "condition_exposure", test_ncb.condition_exposure)
